@@ -316,3 +316,3173 @@ Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 14:42:34 
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 14:42:34 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddAttachmentAvatarToUsers (20140716065120)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "users" ADD "avatar_file_name" varchar(255)[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "users" ADD "avatar_content_type" varchar(255)
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "users" ADD "avatar_file_size" integer[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "users" ADD "avatar_updated_at" datetime
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140716065120"]]
+  [1m[35m (2.4ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-16 15:01:52 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `has_attached_file' for #<Class:0x007fa7179add30>):
+  app/models/user.rb:2:in `<class:User>'
+  app/models/user.rb:1:in `<top (required)>'
+  app/controllers/users_controller.rb:4:in `index'
+
+
+  Rendered /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-16 15:02:50 +0800
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `has_attached_file' for #<Class:0x007fa714bcf558>):
+  app/models/user.rb:2:in `<class:User>'
+  app/models/user.rb:1:in `<top (required)>'
+  app/controllers/users_controller.rb:4:in `index'
+
+
+  Rendered /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-16 15:02:51 +0800
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `has_attached_file' for #<Class:0x007fa7135d7070>):
+  app/models/user.rb:2:in `<class:User>'
+  app/models/user.rb:1:in `<top (required)>'
+  app/controllers/users_controller.rb:4:in `index'
+
+
+  Rendered /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-16 15:03:35 +0800
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `has_attached_file' for #<Class:0x007fa7189fd8e8>):
+  app/models/user.rb:2:in `<class:User>'
+  app/models/user.rb:1:in `<top (required)>'
+  app/controllers/users_controller.rb:4:in `index'
+
+
+  Rendered /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-16 15:03:43 +0800
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `has_attached_file' for #<Class:0x007fa717faca60>):
+  app/models/user.rb:2:in `<class:User>'
+  app/models/user.rb:1:in `<top (required)>'
+  app/controllers/users_controller.rb:4:in `index'
+
+
+  Rendered /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-16 15:04:25 +0800
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `has_attached_file' for #<Class:0x007fa717d95d30>):
+  app/models/user.rb:2:in `<class:User>'
+  app/models/user.rb:1:in `<top (required)>'
+  app/controllers/users_controller.rb:4:in `index'
+
+
+  Rendered /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-16 15:04:26 +0800
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `has_attached_file' for #<Class:0x007fa717c076a8>):
+  app/models/user.rb:2:in `<class:User>'
+  app/models/user.rb:1:in `<top (required)>'
+  app/controllers/users_controller.rb:4:in `index'
+
+
+  Rendered /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-16 15:04:45 +0800
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 7ms (Views: 4.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:04:45 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:04:45 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:04:45 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:04:45 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-16 15:05:40 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 45ms (Views: 43.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:05:40 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:05:40 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:05:40 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:05:40 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-16 15:08:44 +0800
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 5ms (Views: 3.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:08:44 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:08:44 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:08:44 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:08:44 +0800
+
+
+Started GET "/users" for 127.0.0.1 at 2014-07-16 15:08:48 +0800
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 3ms (Views: 3.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:08:48 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:08:48 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:08:48 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:08:48 +0800
+
+
+Started GET "/users" for 127.0.0.1 at 2014-07-16 15:09:13 +0800
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 5ms (Views: 3.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:09:13 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:09:13 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:09:13 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:09:13 +0800
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-07-16 15:09:16 +0800
+
+AbstractController::ActionNotFound (The action 'new' could not be found for UsersController):
+  actionpack (4.1.0) lib/abstract_controller/base.rb:131:in `process'
+  actionview (4.1.0) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.1.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.0) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.1.0) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.1.0) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.1.0) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.1.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.0) lib/action_dispatch/routing/route_set.rb:676:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.0) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.0) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.4ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-07-16 15:09:30 +0800
+Processing by UsersController#new as HTML
+Completed 500 Internal Server Error in 1ms
+
+ActionView::MissingTemplate (Missing template users/new, application/new with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/Users/LeoT/Dropbox/github/wdi/demo/simple_avatar/app/views"
+):
+  actionview (4.1.0) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.1.0) lib/action_view/lookup_context.rb:124:in `find'
+  actionview (4.1.0) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.1.0) lib/action_view/renderer/template_renderer.rb:41:in `determine_template'
+  actionview (4.1.0) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.1.0) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.0) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.0) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.0) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.0) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.0) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.0) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.0) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.0) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.0) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.0) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.1.0) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.0) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.0) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.0) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.0) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.0) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.0) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.0) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.0) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.0) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.0) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.0) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.0) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.0) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.0) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.0) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.0) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.0) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.0) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.0) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.0) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.0) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.0) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.1.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.0) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.1.0) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.1.0) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.1.0) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.1.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.0) lib/action_dispatch/routing/route_set.rb:676:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.0) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.0) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (0.4ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-07-16 15:09:50 +0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:09:50 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:09:50 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:09:50 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:09:50 +0800
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-07-16 15:11:05 +0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <h1>New User Form</h1>
+    2: 
+    3: <%= form_for @user, :url => users_path, :html => { :multipart => true } do |form| %>
+    4:   <%= form.file_field :avatar %>
+    5: <% end %>
+  app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb__3226971111359165291_70148773731320'
+
+
+  Rendered /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.5ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-07-16 15:11:52 +0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 17ms (Views: 14.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:11:52 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:11:52 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:11:52 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:11:52 +0800
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-07-16 15:12:22 +0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:12:22 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:12:22 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:12:22 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:12:22 +0800
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-07-16 15:12:34 +0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:12:34 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:12:34 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:12:34 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:12:34 +0800
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-07-16 15:12:35 +0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:12:35 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:12:35 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:12:35 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:12:35 +0800
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-07-16 15:12:35 +0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:12:35 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:12:35 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:12:35 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:12:35 +0800
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-07-16 15:13:49 +0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:13:49 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:13:49 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:13:49 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:13:49 +0800
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-07-16 15:14:13 +0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:14:13 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:14:13 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:14:13 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:14:13 +0800
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-07-16 15:14:33 +0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 13ms (Views: 13.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:14:33 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:14:33 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:14:33 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:14:33 +0800
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-07-16 15:14:45 +0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:14:45 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:14:45 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:14:45 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:14:45 +0800
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-07-16 15:14:58 +0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:14:58 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:14:58 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:14:58 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:14:58 +0800
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-07-16 15:15:47 +0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 4ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:15:47 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:15:47 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:15:47 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:15:47 +0800
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-07-16 15:15:51 +0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:15:51 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:15:51 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:15:51 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:15:51 +0800
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-07-16 15:16:53 +0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:16:53 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:16:53 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:16:53 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:16:53 +0800
+
+
+Started POST "/users" for 127.0.0.1 at 2014-07-16 15:17:34 +0800
+
+ActionController::RoutingError (No route matches [POST] "/users"):
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.8ms)
+  Rendered /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (15.9ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-07-16 15:19:00 +0800
+
+AbstractController::ActionNotFound (The action 'create' could not be found for UsersController):
+  actionpack (4.1.0) lib/abstract_controller/base.rb:131:in `process'
+  actionview (4.1.0) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.1.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.0) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.1.0) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.1.0) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.1.0) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.1.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.0) lib/action_dispatch/routing/route_set.rb:676:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.0) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.0) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.3ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-07-16 15:19:18 +0800
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iYGmk+60d+Kmf2jykEpPMZkG81TAc1Kfgw+zC8ThNXM=", "user"=>{"email"=>"kulio@gmail.com", "avatar"=>#<ActionDispatch::Http::UploadedFile:0x007f9991c9d150 @tempfile=#<Tempfile:/var/folders/8s/rkjjbvq904lcctjs57rd0km40000gn/T/RackMultipart20140716-27975-v31bh6>, @original_filename="icon-90x90.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[avatar]\"; filename=\"icon-90x90.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create"}
+Completed 500 Internal Server Error in 1ms
+
+ActionView::MissingTemplate (Missing template users/create, application/create with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/Users/LeoT/Dropbox/github/wdi/demo/simple_avatar/app/views"
+):
+  actionview (4.1.0) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.1.0) lib/action_view/lookup_context.rb:124:in `find'
+  actionview (4.1.0) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.1.0) lib/action_view/renderer/template_renderer.rb:41:in `determine_template'
+  actionview (4.1.0) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.1.0) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.0) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.0) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.0) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.0) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.0) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.0) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.0) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.0) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.0) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.0) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.1.0) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.0) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.0) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.0) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.0) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.0) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.0) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.0) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.0) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.0) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.0) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.0) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.0) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.0) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.0) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.0) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.0) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.0) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.0) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.0) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.0) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.0) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.0) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.1.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.0) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.1.0) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.1.0) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.1.0) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.1.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.0) lib/action_dispatch/routing/route_set.rb:676:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.0) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.0) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (0.4ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-07-16 15:20:25 +0800
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iYGmk+60d+Kmf2jykEpPMZkG81TAc1Kfgw+zC8ThNXM=", "user"=>{"email"=>"kulio@gmail.com", "avatar"=>#<ActionDispatch::Http::UploadedFile:0x007f9991a5ed08 @tempfile=#<Tempfile:/var/folders/8s/rkjjbvq904lcctjs57rd0km40000gn/T/RackMultipart20140716-27975-yyg3iy>, @original_filename="icon-90x90.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[avatar]\"; filename=\"icon-90x90.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-16 15:20:25 +0800
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:20:25 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:20:25 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:20:25 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:20:25 +0800
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-07-16 15:20:34 +0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:20:34 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:20:34 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:20:34 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:20:34 +0800
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-07-16 15:21:06 +0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:21:06 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:06 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:06 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:06 +0800
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-07-16 15:21:07 +0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:07 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:21:07 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:07 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:07 +0800
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-07-16 15:21:10 +0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 4ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:10 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:21:10 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:10 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:10 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-16 15:21:12 +0800
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:21:12 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:12 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:12 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:12 +0800
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-07-16 15:21:14 +0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:14 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:14 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:14 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:21:14 +0800
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-07-16 15:21:17 +0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:21:17 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:17 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:17 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:17 +0800
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-07-16 15:21:26 +0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:26 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:21:26 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:26 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:26 +0800
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-07-16 15:21:47 +0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 4ms (Views: 4.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:47 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:47 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:47 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:21:47 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-16 15:21:48 +0800
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:48 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:21:48 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:48 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:48 +0800
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-07-16 15:21:49 +0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 3ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:21:49 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:49 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:49 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:49 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-16 15:21:50 +0800
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:21:50 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:50 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:50 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:50 +0800
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-07-16 15:21:50 +0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 3ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:50 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:21:50 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:50 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:50 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-16 15:21:51 +0800
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 4ms (Views: 4.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:21:51 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:51 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:51 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:51 +0800
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-07-16 15:21:51 +0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 5ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:21:51 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:51 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:51 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:51 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-16 15:21:52 +0800
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:52 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:21:52 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:52 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:52 +0800
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-07-16 15:21:52 +0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:52 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:52 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:52 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:21:52 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-16 15:21:52 +0800
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 3ms (Views: 3.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:52 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:21:52 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:52 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:52 +0800
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-07-16 15:21:53 +0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 3ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:21:53 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:53 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:53 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:53 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-16 15:21:53 +0800
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:21:53 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:53 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:53 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:53 +0800
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-07-16 15:21:54 +0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:21:54 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:54 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:54 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:54 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-16 15:21:54 +0800
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 3ms (Views: 3.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:21:54 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:54 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:54 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:54 +0800
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-07-16 15:21:55 +0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:21:55 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:55 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:55 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:55 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-16 15:21:55 +0800
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:21:55 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:55 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:55 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:55 +0800
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-07-16 15:21:56 +0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:56 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:21:56 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:56 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:56 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-16 15:21:56 +0800
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:21:56 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:56 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:56 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:56 +0800
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-07-16 15:21:56 +0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:56 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:21:56 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:56 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:56 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-16 15:21:57 +0800
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:57 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:57 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:21:57 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:57 +0800
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-07-16 15:21:57 +0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:21:58 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:58 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:58 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:58 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-16 15:21:58 +0800
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:58 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:58 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:21:58 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:58 +0800
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-07-16 15:21:59 +0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:21:59 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:59 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:59 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:59 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-16 15:21:59 +0800
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:21:59 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:59 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:59 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:21:59 +0800
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-07-16 15:22:00 +0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:22:00 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:22:00 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:22:00 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:22:00 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-16 15:22:00 +0800
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:22:00 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:22:00 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:22:00 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:22:00 +0800
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-07-16 15:22:01 +0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 4ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:22:01 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:22:01 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:22:01 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:22:01 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-16 15:22:01 +0800
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:22:01 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:22:01 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:22:01 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:22:01 +0800
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-07-16 15:22:02 +0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 3ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:22:02 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:22:02 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:22:02 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:22:02 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-16 15:22:02 +0800
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:22:02 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:22:02 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:22:02 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:22:02 +0800
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-07-16 15:22:03 +0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:22:03 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:22:03 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:22:03 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:22:03 +0800
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-07-16 15:22:32 +0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:22:32 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:22:32 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:22:32 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:22:32 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-16 15:22:33 +0800
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:22:33 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:22:33 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:22:33 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:22:33 +0800
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-07-16 15:22:33 +0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 3ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:22:33 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:22:33 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:22:33 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:22:33 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-16 15:22:33 +0800
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:22:34 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:22:34 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:22:34 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:22:34 +0800
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-07-16 15:22:34 +0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:22:34 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:22:34 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:22:34 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:22:34 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-16 15:22:34 +0800
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:22:34 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:22:34 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:22:34 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:22:34 +0800
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-07-16 15:22:35 +0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:22:35 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:22:35 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:22:35 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:22:35 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-16 15:22:35 +0800
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:22:35 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:22:35 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:22:35 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:22:35 +0800
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-07-16 15:22:36 +0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:22:36 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:22:36 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:22:36 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:22:36 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-16 15:22:36 +0800
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:22:36 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:22:36 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:22:36 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:22:36 +0800
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-07-16 15:22:37 +0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:22:37 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:22:37 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:22:37 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:22:37 +0800
+
+
+Started POST "/users" for 127.0.0.1 at 2014-07-16 15:22:45 +0800
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iYGmk+60d+Kmf2jykEpPMZkG81TAc1Kfgw+zC8ThNXM=", "user"=>{"email"=>"kulio@gmail.com", "avatar"=>#<ActionDispatch::Http::UploadedFile:0x007f9991b5ebe0 @tempfile=#<Tempfile:/var/folders/8s/rkjjbvq904lcctjs57rd0km40000gn/T/RackMultipart20140716-27975-1g4ag5b>, @original_filename="icon-90x90.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[avatar]\"; filename=\"icon-90x90.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-16 15:22:45 +0800
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:22:45 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:22:45 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:22:45 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:22:45 +0800
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-07-16 15:23:07 +0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 9ms (Views: 6.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:23:07 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:23:07 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:23:07 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:23:07 +0800
+
+
+Started POST "/users" for 127.0.0.1 at 2014-07-16 15:23:17 +0800
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iYGmk+60d+Kmf2jykEpPMZkG81TAc1Kfgw+zC8ThNXM=", "user"=>{"email"=>"kulio@gmail.com", "avatar"=>#<ActionDispatch::Http::UploadedFile:0x007f9992b405e0 @tempfile=#<Tempfile:/var/folders/8s/rkjjbvq904lcctjs57rd0km40000gn/T/RackMultipart20140716-27975-wd13x9>, @original_filename="icon-90x90.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[avatar]\"; filename=\"icon-90x90.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-16 15:23:17 +0800
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:23:17 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:23:17 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:23:17 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:23:17 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-16 15:23:34 +0800
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:23:34 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:23:34 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:23:34 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:23:34 +0800
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-07-16 15:23:35 +0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:23:35 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:23:35 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:23:35 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:23:35 +0800
+
+
+Started POST "/users" for 127.0.0.1 at 2014-07-16 15:23:41 +0800
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iYGmk+60d+Kmf2jykEpPMZkG81TAc1Kfgw+zC8ThNXM=", "user"=>{"email"=>"kulio@gmail.com", "avatar"=>#<ActionDispatch::Http::UploadedFile:0x007f99981f1f10 @tempfile=#<Tempfile:/var/folders/8s/rkjjbvq904lcctjs57rd0km40000gn/T/RackMultipart20140716-27975-1eh5all>, @original_filename="icon-90x90.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[avatar]\"; filename=\"icon-90x90.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-16 15:23:41 +0800
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 3ms (Views: 3.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:23:41 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:23:41 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:23:41 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:23:41 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-16 15:24:26 +0800
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:24:26 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:24:26 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:24:26 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:24:26 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-16 15:24:29 +0800
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:24:30 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:24:30 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:24:30 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:24:30 +0800
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-07-16 15:24:33 +0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:24:33 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:24:33 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:24:33 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:24:33 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-16 15:24:34 +0800
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:24:34 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:24:34 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:24:34 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:24:34 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-16 15:24:34 +0800
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:24:34 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:24:34 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:24:34 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:24:34 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-16 15:24:44 +0800
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `pry' for #<Binding:0x007f9991a2ed88>):
+  app/controllers/users_controller.rb:5:in `index'
+
+
+  Rendered /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-16 15:24:56 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 22996ms (Views: 32.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:25:19 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:25:19 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:25:19 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:25:19 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-16 15:25:47 +0800
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 4750ms (Views: 4.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-07-16 15:25:51 +0800
+Processing by UsersController#new as HTML
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2014-07-16 07:25:51.949540"], ["updated_at", "2014-07-16 07:25:51.949540"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  Rendered users/new.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 21ms (Views: 8.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:25:51 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:25:52 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:25:52 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:25:52 +0800
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-07-16 15:26:01 +0800
+Processing by UsersController#new as HTML
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2014-07-16 07:26:01.330340"], ["updated_at", "2014-07-16 07:26:01.330340"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  Rendered users/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 13ms (Views: 4.0ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:26:01 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:26:01 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:26:01 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:26:01 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-16 15:26:03 +0800
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 3ms (Views: 3.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:26:03 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:26:03 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:26:03 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:26:03 +0800
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-07-16 15:26:05 +0800
+Processing by UsersController#new as HTML
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2014-07-16 07:26:05.486460"], ["updated_at", "2014-07-16 07:26:05.486460"]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+  Rendered users/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 7ms (Views: 3.7ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:26:05 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:26:05 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:26:05 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:26:05 +0800
+
+
+Started PATCH "/users" for 127.0.0.1 at 2014-07-16 15:26:17 +0800
+
+ActionController::RoutingError (No route matches [PATCH] "/users"):
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.9ms)
+  Rendered /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.9ms)
+  Rendered /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (17.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-16 15:28:24 +0800
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 14ms (Views: 10.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-16 15:28:24 +0800
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:28:24 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:28:24 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:28:24 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:28:24 +0800
+  [1m[36m (2.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.7ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateUsers (20140716063123)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140716063123"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+Migrating to AddAttachmentAvatarToUsers (20140716065120)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "users" ADD "avatar_file_name" varchar(255)
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "users" ADD "avatar_content_type" varchar(255)[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "users" ADD "avatar_file_size" integer
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "users" ADD "avatar_updated_at" datetime[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140716065120"]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-16 15:28:56 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 27ms (Views: 25.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:28:56 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:28:56 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:28:56 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:28:56 +0800
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-07-16 15:30:01 +0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (13.4ms)
+Completed 200 OK in 24ms (Views: 16.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:30:01 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:30:01 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:30:01 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:30:01 +0800
+
+
+Started POST "/users" for 127.0.0.1 at 2014-07-16 15:30:09 +0800
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iYGmk+60d+Kmf2jykEpPMZkG81TAc1Kfgw+zC8ThNXM=", "user"=>{"email"=>"kulio@gmail.com", "avatar"=>#<ActionDispatch::Http::UploadedFile:0x007fedf68cb8b0 @tempfile=#<Tempfile:/var/folders/8s/rkjjbvq904lcctjs57rd0km40000gn/T/RackMultipart20140716-29715-qk360c>, @original_filename="icon-90x90.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[avatar]\"; filename=\"icon-90x90.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 271323ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-16 15:34:40 +0800
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:34:41 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:34:41 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:34:41 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:34:41 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-16 15:34:49 +0800
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:34:49 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:34:49 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:34:49 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:34:49 +0800
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-07-16 15:34:50 +0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:34:50 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:34:50 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:34:50 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:34:50 +0800
+
+
+Started POST "/users" for 127.0.0.1 at 2014-07-16 15:34:58 +0800
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iYGmk+60d+Kmf2jykEpPMZkG81TAc1Kfgw+zC8ThNXM=", "user"=>{"email"=>"kulio@gmail.com", "avatar"=>#<ActionDispatch::Http::UploadedFile:0x007fedf7a84e58 @tempfile=#<Tempfile:/var/folders/8s/rkjjbvq904lcctjs57rd0km40000gn/T/RackMultipart20140716-29715-h5oh7q>, @original_filename="icon-90x90.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[avatar]\"; filename=\"icon-90x90.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create"}
+Command :: file -b --mime '/var/folders/8s/rkjjbvq904lcctjs57rd0km40000gn/T/14dcd445d8b9c85e439f564154ce8f9d20140716-29715-16yrx94.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/8s/rkjjbvq904lcctjs57rd0km40000gn/T/14dcd445d8b9c85e439f564154ce8f9d20140716-29715-1ch9xxv.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/8s/rkjjbvq904lcctjs57rd0km40000gn/T/14dcd445d8b9c85e439f564154ce8f9d20140716-29715-1ch9xxv.jpg[0]'
+Command :: convert '/var/folders/8s/rkjjbvq904lcctjs57rd0km40000gn/T/14dcd445d8b9c85e439f564154ce8f9d20140716-29715-1ch9xxv.jpg[0]' -auto-orient -resize "300x300>" '/var/folders/8s/rkjjbvq904lcctjs57rd0km40000gn/T/14dcd445d8b9c85e439f564154ce8f9d20140716-29715-1ch9xxv20140716-29715-16hk07k'
+Command :: file -b --mime '/var/folders/8s/rkjjbvq904lcctjs57rd0km40000gn/T/14dcd445d8b9c85e439f564154ce8f9d20140716-29715-1ch9xxv20140716-29715-16hk07k'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/8s/rkjjbvq904lcctjs57rd0km40000gn/T/14dcd445d8b9c85e439f564154ce8f9d20140716-29715-1ch9xxv.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/8s/rkjjbvq904lcctjs57rd0km40000gn/T/14dcd445d8b9c85e439f564154ce8f9d20140716-29715-1ch9xxv.jpg[0]'
+Command :: convert '/var/folders/8s/rkjjbvq904lcctjs57rd0km40000gn/T/14dcd445d8b9c85e439f564154ce8f9d20140716-29715-1ch9xxv.jpg[0]' -auto-orient -resize "100x100>" '/var/folders/8s/rkjjbvq904lcctjs57rd0km40000gn/T/14dcd445d8b9c85e439f564154ce8f9d20140716-29715-1ch9xxv20140716-29715-1jr7bs0'
+Command :: file -b --mime '/var/folders/8s/rkjjbvq904lcctjs57rd0km40000gn/T/14dcd445d8b9c85e439f564154ce8f9d20140716-29715-1ch9xxv20140716-29715-1jr7bs0'
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Command :: file -b --mime '/var/folders/8s/rkjjbvq904lcctjs57rd0km40000gn/T/14dcd445d8b9c85e439f564154ce8f9d20140716-29715-1ngy9ia.jpg'
+Binary data inserted for `string` type on column `avatar_content_type`
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("avatar_content_type", "avatar_file_name", "avatar_file_size", "avatar_updated_at", "created_at", "email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["avatar_content_type", "image/jpeg"], ["avatar_file_name", "icon-90x90.jpg"], ["avatar_file_size", 5098], ["avatar_updated_at", "2014-07-16 07:34:58.074450"], ["created_at", "2014-07-16 07:34:58.187716"], ["email", "kulio@gmail.com"], ["updated_at", "2014-07-16 07:34:58.187716"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 148ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-16 15:34:58 +0800
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:34:58 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:34:58 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:34:58 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:34:58 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-16 15:36:16 +0800
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 10ms (Views: 7.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:36:17 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:36:17 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:36:17 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:36:17 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-16 15:36:41 +0800
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:36:41 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:36:41 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:36:41 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:36:41 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-16 15:36:44 +0800
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:36:44 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:36:44 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:36:44 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:36:44 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-16 15:37:24 +0800
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 9ms (Views: 7.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:37:25 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:37:25 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:37:25 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:37:25 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-16 15:37:56 +0800
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (7.6ms)
+Completed 500 Internal Server Error in 9ms
+
+ActionView::Template::Error (undefined method `user_path' for #<#<Class:0x007fedf9172098>:0x007fedf7fbbd68>):
+     5: <ul class="users">
+     6:   <% @users.each do |user| %>
+     7:     <li class="user">
+     8:       <%= link_to user.email, user %>
+     9:     </li>
+    10:   <% end %>
+    11: </ul>
+  app/views/users/index.html.erb:8:in `block in _app_views_users_index_html_erb__1641527840718021181_70330022219920'
+  app/views/users/index.html.erb:6:in `_app_views_users_index_html_erb__1641527840718021181_70330022219920'
+
+
+  Rendered /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-16 15:38:20 +0800
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:38:20 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:38:20 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:38:20 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:38:20 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-16 15:38:48 +0800
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:38:48 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:38:48 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:38:48 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:38:48 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-16 15:41:18 +0800
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 4ms (Views: 4.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:41:18 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:41:18 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:41:18 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:41:18 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-16 15:41:33 +0800
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:41:33 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:41:33 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:41:33 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:41:33 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-16 15:42:36 +0800
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:42:36 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:42:36 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:42:36 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:42:36 +0800
+
+
+Started GET "/users/1" for 127.0.0.1 at 2014-07-16 15:42:44 +0800
+
+AbstractController::ActionNotFound (The action 'show' could not be found for UsersController):
+  actionpack (4.1.0) lib/abstract_controller/base.rb:131:in `process'
+  actionview (4.1.0) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.1.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.0) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.1.0) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.1.0) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.1.0) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.1.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.0) lib/action_dispatch/routing/route_set.rb:676:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.0) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.0) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.4ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2014-07-16 15:42:58 +0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms
+
+ActionView::MissingTemplate (Missing template users/show, application/show with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/Users/LeoT/Dropbox/github/wdi/demo/simple_avatar/app/views"
+):
+  actionview (4.1.0) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.1.0) lib/action_view/lookup_context.rb:124:in `find'
+  actionview (4.1.0) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.1.0) lib/action_view/renderer/template_renderer.rb:41:in `determine_template'
+  actionview (4.1.0) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.1.0) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.0) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.0) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.0) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.0) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.0) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.0) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.0) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.0) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.0) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.0) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.1.0) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.0) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.0) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.0) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.0) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.0) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.0) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.0) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.0) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.0) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.0) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.0) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.0) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.0) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.0) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.0) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.0) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.0) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.0) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.0) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.0) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.0) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.0) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.1.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.0) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.1.0) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.1.0) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.1.0) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.1.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.0) lib/action_dispatch/routing/route_set.rb:676:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.0) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.0) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (0.4ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2014-07-16 15:43:14 +0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered users/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:43:14 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:43:14 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:43:14 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:43:14 +0800
+
+
+Started GET "/users/1" for 127.0.0.1 at 2014-07-16 15:44:18 +0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered users/show.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (undefined method `avatar' for nil:NilClass):
+    1: <h1>Show User</h1>
+    2: 
+    3: <div class="avatar">
+    4:   <%= image_tag @user.avatar.url %>
+    5: </div>
+    6: 
+    7: <div class="email">
+  app/views/users/show.html.erb:4:in `_app_views_users_show_html_erb__3344202061945424979_70330030885520'
+
+
+  Rendered /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.1ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2014-07-16 15:44:44 +0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered users/show.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 10ms (Views: 6.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:44:44 +0800
+
+
+Started GET "/images/original/missing.png" for 127.0.0.1 at 2014-07-16 15:44:44 +0800
+
+ActionController::RoutingError (No route matches [GET] "/images/original/missing.png"):
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.9ms)
+  Rendered /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (16.4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:44:44 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:44:44 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:44:44 +0800
+
+
+Started GET "/images/original/missing.png" for 127.0.0.1 at 2014-07-16 15:44:44 +0800
+
+ActionController::RoutingError (No route matches [GET] "/images/original/missing.png"):
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.5ms)
+  Rendered /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.8ms)
+  Rendered /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (18.6ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2014-07-16 15:45:00 +0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered users/show.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 54478ms (Views: 6.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2014-07-16 15:45:55 +0800
+Processing by UsersController#show as HTML
+  Parameters: {"thisisauniqueidentifier"=>"1"}
+  Rendered users/show.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 55608ms (Views: 6.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1dskjfsdljk" for 127.0.0.1 at 2014-07-16 15:46:50 +0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1dskjfsdljk"}
+  Rendered users/show.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 50138ms (Views: 6.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2014-07-16 15:47:40 +0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 32996ms (Views: 4.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:48:13 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:48:13 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:48:13 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:48:13 +0800
+
+
+Started GET "/images/original/missing.png" for 127.0.0.1 at 2014-07-16 15:48:13 +0800
+
+ActionController::RoutingError (No route matches [GET] "/images/original/missing.png"):
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.9ms)
+  Rendered /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /Users/LeoT/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (19.8ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2014-07-16 15:48:48 +0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 15ms (Views: 6.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:48:48 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:48:48 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:48:48 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:48:48 +0800
+
+
+Started GET "/users/1" for 127.0.0.1 at 2014-07-16 15:49:25 +0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:49:25 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:49:25 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:49:25 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:49:25 +0800
+
+
+Started GET "/users/1" for 127.0.0.1 at 2014-07-16 15:49:36 +0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:49:36 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:49:36 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:49:36 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:49:36 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-16 15:49:38 +0800
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:49:38 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:49:38 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:49:38 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:49:38 +0800
+
+
+Started GET "/users/1" for 127.0.0.1 at 2014-07-16 15:49:39 +0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:49:39 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:49:39 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:49:39 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:49:39 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-16 15:49:40 +0800
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:49:40 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:49:40 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:49:40 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:49:40 +0800
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-07-16 15:49:40 +0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 5ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:49:41 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:49:41 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:49:41 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:49:41 +0800
+
+
+Started POST "/users" for 127.0.0.1 at 2014-07-16 15:50:05 +0800
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iYGmk+60d+Kmf2jykEpPMZkG81TAc1Kfgw+zC8ThNXM=", "user"=>{"email"=>"iron_man@gmail.com", "avatar"=>#<ActionDispatch::Http::UploadedFile:0x007fedf39b29c0 @tempfile=#<Tempfile:/var/folders/8s/rkjjbvq904lcctjs57rd0km40000gn/T/RackMultipart20140716-29715-kajpzv>, @original_filename="CIMG0708-1.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[avatar]\"; filename=\"CIMG0708-1.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create"}
+Command :: file -b --mime '/var/folders/8s/rkjjbvq904lcctjs57rd0km40000gn/T/4456b9520b89371d0e497dc523aa477b20140716-29715-eggyom.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/8s/rkjjbvq904lcctjs57rd0km40000gn/T/4456b9520b89371d0e497dc523aa477b20140716-29715-1s3bpj0.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/8s/rkjjbvq904lcctjs57rd0km40000gn/T/4456b9520b89371d0e497dc523aa477b20140716-29715-1s3bpj0.jpg[0]'
+Command :: convert '/var/folders/8s/rkjjbvq904lcctjs57rd0km40000gn/T/4456b9520b89371d0e497dc523aa477b20140716-29715-1s3bpj0.jpg[0]' -auto-orient -resize "300x300>" '/var/folders/8s/rkjjbvq904lcctjs57rd0km40000gn/T/4456b9520b89371d0e497dc523aa477b20140716-29715-1s3bpj020140716-29715-g9q1r5'
+Command :: file -b --mime '/var/folders/8s/rkjjbvq904lcctjs57rd0km40000gn/T/4456b9520b89371d0e497dc523aa477b20140716-29715-1s3bpj020140716-29715-g9q1r5'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/8s/rkjjbvq904lcctjs57rd0km40000gn/T/4456b9520b89371d0e497dc523aa477b20140716-29715-1s3bpj0.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/8s/rkjjbvq904lcctjs57rd0km40000gn/T/4456b9520b89371d0e497dc523aa477b20140716-29715-1s3bpj0.jpg[0]'
+Command :: convert '/var/folders/8s/rkjjbvq904lcctjs57rd0km40000gn/T/4456b9520b89371d0e497dc523aa477b20140716-29715-1s3bpj0.jpg[0]' -auto-orient -resize "100x100>" '/var/folders/8s/rkjjbvq904lcctjs57rd0km40000gn/T/4456b9520b89371d0e497dc523aa477b20140716-29715-1s3bpj020140716-29715-1374e2d'
+Command :: file -b --mime '/var/folders/8s/rkjjbvq904lcctjs57rd0km40000gn/T/4456b9520b89371d0e497dc523aa477b20140716-29715-1s3bpj020140716-29715-1374e2d'
+  [1m[35m (0.1ms)[0m  begin transaction
+Command :: file -b --mime '/var/folders/8s/rkjjbvq904lcctjs57rd0km40000gn/T/4456b9520b89371d0e497dc523aa477b20140716-29715-46kqxu.jpg'
+Binary data inserted for `string` type on column `avatar_content_type`
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("avatar_content_type", "avatar_file_name", "avatar_file_size", "avatar_updated_at", "created_at", "email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["avatar_content_type", "image/jpeg"], ["avatar_file_name", "CIMG0708-1.jpg"], ["avatar_file_size", 3718455], ["avatar_updated_at", "2014-07-16 07:50:05.276604"], ["created_at", "2014-07-16 07:50:06.354864"], ["email", "iron_man@gmail.com"], ["updated_at", "2014-07-16 07:50:06.354864"]]
+  [1m[35m (7.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 1126ms (ActiveRecord: 8.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-16 15:50:06 +0800
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:50:06 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:50:06 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:50:06 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:50:06 +0800
+
+
+Started GET "/users/2" for 127.0.0.1 at 2014-07-16 15:50:08 +0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered users/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:50:08 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:50:08 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:50:08 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:50:08 +0800
+
+
+Started GET "/users/2" for 127.0.0.1 at 2014-07-16 15:50:19 +0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered users/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:50:19 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:50:19 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:50:19 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:50:19 +0800
+
+
+Started GET "/users/1" for 127.0.0.1 at 2014-07-16 15:50:21 +0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 15:50:21 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 15:50:21 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:50:21 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:50:21 +0800

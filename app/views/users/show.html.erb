@@ -1,0 +1,11 @@
+<h1>Show User</h1>
+
+<%= link_to "back", root_path %>
+
+<div class="avatar">
+  <%= image_tag @user.avatar.url %>
+</div>
+
+<div class="email">
+  <%= @user.email %>
+</div>
